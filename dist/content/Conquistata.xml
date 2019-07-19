@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         
+         <div type="testo">
+            <div type="testoLiberata">
+               <lg n="1">
+                  <l n="1">Canto l'arme <seg xml:id="segLib1" select="#nota1 #nota2">pietose</seg> e 'l <seg xml:id="segLib2" select="#nota3"
+                        >capitano</seg></l>
+                  <l n="2">che 'l gran sepolcro liberò di Cristo.</l>
+                  <l n="3">Molto egli oprò co 'l senno e con la mano,</l>
+                  <l n="4">molto soffrí nel glorioso acquisto;</l>
+                  <l n="5">e in van l'Inferno vi s'oppose, e in vano</l>
+                  <l n="6">s'armò d'Asia e di Libia il popol misto.</l>
+                  <l n="7">Il Ciel gli diè favore, e sotto a i santi</l>
+                  <l n="8">segni ridusse i suoi compagni erranti.</l>
+               </lg>
+            </div>
+            <div type="testoConquistata">
+               <head/>
+               <lg n="1">
+                  <l n="1"> Io canto <seg corresp="#segLib1">[...]</seg>,l'arme e 'l <seg corresp="#segLib2"
+                        >cavalier sovrano</seg>,</l>
+                  <l n="2"> che tolse il giogo a la cittá di Cristo.</l>
+                  <l n="3">Molto co 'l senno e con l'invitta mano</l>
+                  <l n="4">egli adoprò nel glorïoso acquisto;</l>
+                  <l n="5">e di morti ingombrò le valli e 'l piano,</l>
+                  <l n="6">e correr fece il mar di sangue misto.</l>
+                  <l n="7">Molto nel duro assedio ancor sofferse,</l>
+                  <l n="8">per cui prima la terra e 'l ciel s'aperse</l>
+               </lg>
+            </div>
+         </div>
+         
+
+         <div type="note">
+            <note type="commento" xml:id="nota1">L'aggettivo è inserito dal Salviati (<bibl
+                     corresp="#salviati1585a">Salviati 1585a</bibl>, p. 83) come epiteto improprio.
+                  Tasso non rileva altro modo per tradurre il corrispettivo pius latino (<bibl
+                     corresp="#tasso1585a">Tasso 1585a</bibl>, p. 108). Fioretti difende l’uso
+                  improprio del pietose perché sinonimo di misericordiose o compassionevoli,
+                  aggettivi impropri in riferimento alle armi <bibl corresp="#fioretti1586"
+                     >Fioretti1586</bibl>, p. 46) </note>
+            <note type="commento" xml:id="nota2">Lombardismo, barbarismo (<bibl corresp="#salviati1585a"
+                     >Salviati 1585a</bibl>, p. 72).<said>“Gli Accademici si oppongono in
+                     particolare all’uso in rima del termine”</said> (<bibl corresp="#ottonlli1585"
+                     >Ottonelli 15855</bibl>, p. 143). </note>
+            <note type="occorrenze" xml:id="nota3">33</note>
+         </div>
+
+
+         <div type="bibliografia">
+            <listBibl>
+               <bibl xml:id="salviati1585a">
+                  <author>Leonardo Salviati</author>, <title>Degli Accademici della Crusca, difesa
+                     dell'Orlando Furioso dell'Ariosto contra 'l dialogo dell'epica poesia di
+                     Camillo Pellegrino. Stacciata prima</title>, <publisher>Manzani</publisher>,
+                     <settlement>Firenze</settlement>
+                  <date>1585</date>
+               </bibl>
+               
+               <bibl xml:id="tasso1585a">
+                  <author>Torquato Tasso</author>, <title>Apologia del sig. Torquato Tasso in difesa
+                     della Gerusalemme Liberata</title>, <publisher>Cagnacini</publisher>,
+                     <settlement>Ferrara</settlement>,<date>1585</date></bibl>
+                  
+                  <bibl xml:id="fioretti1586">
+                     <author>Carlo Fioretti</author>, <title>Considerazioni di Carlo Fioretti da
+                        Vernio, intorno a un discorso di m. Giulio Ottonelli da Fanano sopra ad
+                        alcune dispute dietro alla Gierusalèmme di Torquato Tasso, </title>,
+                        <publisher>Padovani</publisher>,
+                        <settlement>Firenze</settlement>,<date>1586</date>
+                  </bibl>
+                  <bibl xml:id="ottonelli1585">
+                     <author>Giulio Ottonelli</author>, <title>Discorso di Giulio Ottonelli sopra
+                        l'abuso del dire Sua Santità, Sua Maestà, Sua Altezza, senza nominare il
+                        papa, l'imperatore, il principe. Con le difese della Gierusalemme Liberata
+                        del sig. Torquato Tasso dall'oppositioni de gli Academici della Crusca,
+                     </title>, <publisher>Vassalini</publisher>,
+                        <settlement>Ferrara</settlement>,<date>1585</date>
+                  </bibl>
+            </listBibl>
+         </div>
+      </body>
+
+
+   </text>
+</TEI>
